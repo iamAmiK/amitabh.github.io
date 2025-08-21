@@ -3,56 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amitabh | Portfolio</title>
+  <title>Amitabh Kumar - Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
-    header { background: #222; color: #fff; text-align: center; padding: 60px 20px 40px; }
-    header h1 { font-size: 3em; margin: 0 0 0.25em; }
-    header h2 { font-weight: 400; color: #ffaa00; }
-    section { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .project-box { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 20px; }
-    .cta { text-align: center; margin: 60px 0 20px; }
-    .cta a { background: #ffaa00; color: #fff; padding: 14px 32px; border-radius: 6px; text-decoration: none; font-size: 1.2em; }
-    footer { text-align: center; padding: 30px 10px; background: #222; color: #ccc; }
-    @media (max-width: 700px) {
-      .projects { grid-template-columns: 1fr; }
-      header h1 { font-size: 2em; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafc;
+      color: #333;
+    }
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0.2em 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0.3em 0;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+      color: #1e293b;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 1.5em;
+    }
+    .card {
+      background: white;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1e293b;
+      color: white;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Amitabh</h1>
-    <h2>Web Developer & Designer</h2>
-    <p>Crafting clean, modern web solutions to elevate your online presence.</p>
+    <h1>Amitabh Kumar</h1>
+    <p>
+      <a href="mailto:amit.kres1@gmail.com">amit.kres1@gmail.com</a> · 
+      <a href="tel:+61450049140">0450 049 140</a>
+    </p>
+    <p>
+      <a href="https://github.com/iamAmiK" target="_blank">GitHub</a> ·
+      <a href="https://www.youtube.com/@amitabhkumar4528/videos" target="_blank">YouTube</a>
+    </p>
   </header>
 
   <section>
-    <h3>About Me</h3>
-    <p>Hello! I’m Amitabh, a passionate web developer with experience in creating impactful digital experiences. From responsive websites to interactive user interfaces, I love bringing ideas to life on the web.</p>
-  </section>
-
-  <section>
-    <h3>Featured Projects</h3>
-    <div class="projects">
-      <div class="project-box">
-        <h4>Project One</h4>
-        <p>Short project description goes here. Showcase your best work.</p>
-      </div>
-      <div class="project-box">
-        <h4>Project Two</h4>
-        <p>Describe another project. Include what tools/skills you used.</p>
-      </div>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>University of New South Wales (UNSW)</strong><br>
+      Bachelor of Software Engineering (Honours), Expected Dec 2026</p>
+      <p><em>Relevant coursework:</em> Data Structures & Algorithms, OOP, Computer Networks, HCI, Cloud & Application Security</p>
+      <p><em>Skills:</em> Python, JavaScript, Java, SQL, C, AWS, Azure, CI/CD, Postman, Swagger</p>
     </div>
   </section>
 
-  <div class="cta">
-    <a href="mailto:your.email@example.com">Contact Me</a>
-  </div>
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Software Engineering Intern — FAIC (UNSW)</h3>
+      <p><em>Apr 2025 – Present</em></p>
+      <ul>
+        <li>Led database refactoring, AI/NLP/agentic research, and full-stack automation.</li>
+        <li>Built a secure, scalable, PEPPOL-compliant API for e-invoicing with schema validation.</li>
+        <li>Enhanced Flask app for BPMN → AWS Step Functions translation and improved AWS SQS communication.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Research Analyst — FAIC</h3>
+      <p><em>Mar 2025 – Present</em></p>
+      <ul>
+        <li>Led APAC market research on digital trade & fintech to support product strategy and commercialisation.</li>
+        <li>Engaged with AWS, Westpac, startups & government to validate solution fit and adoption goals.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Platform Operations Engineer — InspireEd</h3>
+      <p><em>May 2024 – Feb 2025</em></p>
+      <ul>
+        <li>Developed REST API integrating aXcelerate CMS with Azure Communication Services.</li>
+        <li>Managed LMS, CMS & SMTP infrastructure with security best practices.</li>
+        <li>Deployed a secure open-source SMTP gateway, improving reliability & reducing cost.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Full-stack UBL Invoice Automation Platform</h3>
+      <p><em>Feb 2025</em></p>
+      <ul>
+        <li>Developed REST API & web app for UBL invoice generation/validation & AI-driven workflows.</li>
+        <li>Implemented schema validation, CI/CD with GitHub Actions, AWS RDS & Elastic Beanstalk deployment.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Learning Management System (SaaS)</h3>
+      <p><em>Jun 2024 – Present</em></p>
+      <ul>
+        <li>Scalable LMS platform using AWS Amplify & Azure Entra ID.</li>
+        <li>Designed modular backend services with secure token-based access control.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Open Source NPM Package</h3>
+      <p><em>Mar 2024</em></p>
+      <p><a href="https://www.npmjs.com/package/any-call-system-web" target="_blank">any-call-system-web</a> — flexible call routing & trigger library, 100+ downloads.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Awards & Extracurriculars</h2>
+    <div class="card">
+      <ul>
+        <li>Letter of recommendation from Prof. Fethi Rabhi (UNSW, 25+ years experience).</li>
+        <li>Top 1% in COMP1531 & SENG2021 at UNSW.</li>
+        <li>Certificate of Achievement in Financial Literacy with Models.</li>
+        <li>1st place — Hackathon (Most Aesthetic Design) for Mars Rover project.</li>
+        <li>Volunteer lead tutor at Code Club Australia.</li>
+      </ul>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Amitabh. All rights reserved.
+    <p>© 2025 Amitabh Kumar · Built with ❤</p>
   </footer>
 </body>
 </html>
