@@ -1,231 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amitabh Kumar - Portfolio</title>
-  <style>
-    /* --- Base Styles --- */
-    :root {
-      --bg: #f9fbfd;
-      --card-bg: #ffffff;
-      --primary: #1e40af; /* coastal deep blue */
-      --accent: #3b82f6; /* lighter ocean blue */
-      --text: #1e293b;
-      --muted: #64748b;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0; padding: 0;
-    }
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    /* --- Header --- */
-    header {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      background: linear-gradient(135deg, var(--accent), var(--primary));
-      color: white;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-    }
-    header p, header a {
-      color: rgba(255,255,255,0.9);
-      font-size: 1rem;
-    }
-    header a {
-      margin: 0 .4rem;
-      transition: color .3s;
-    }
-    header a:hover {
-      color: white;
-    }
-
-    /* --- Sections --- */
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 3rem 1.5rem;
-    }
-    section h2 {
-      font-size: 1.6rem;
-      color: var(--primary);
-      border-left: 4px solid var(--accent);
-      padding-left: .5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    /* --- Cards --- */
-    .card {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin-bottom: .5rem;
-      color: var(--primary);
-    }
-    .card p {
-      margin-bottom: .5rem;
-      color: var(--muted);
-    }
-    ul {
-      padding-left: 1.2rem;
-      margin-top: .5rem;
-    }
-    li {
-      margin: .3rem 0;
-    }
-
-    /* --- Links --- */
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      position: relative;
-    }
-    a::after {
-      content: "";
-      position: absolute;
-      left: 0; bottom: -2px;
-      width: 100%; height: 2px;
-      background: var(--accent);
-      transform: scaleX(0);
-      transition: transform .3s ease;
-      transform-origin: right;
-    }
-    a:hover::after {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-
-    /* --- Footer --- */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: var(--primary);
-      color: white;
-      font-size: .9rem;
-      margin-top: 3rem;
-    }
-    footer p { opacity: .9; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <title>Amitabh Kumar - Software Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>Amitabh Kumar</h1>
-    <p>
-      <a href="mailto:amit.kres1@gmail.com">amit.kres1@gmail.com</a> · 
-      <a href="tel:+61450049140">0450 049 140</a>
+  <div class="card">
+    <div class="profile-img"></div>
+    <h2>Amitabh Kumar</h2>
+    <p class="info">
+      I'm Amitabh, a Software Engineering Honours student at UNSW and Software Engineering Intern at FAIC. I specialize in full-stack development, cloud architecture (AWS/Azure), and AI/ML integration. Currently working on secure API development, database systems, and leading APAC market research in fintech and digital trade. Passionate about building scalable solutions and automation platforms.
     </p>
-    <p>
-      <a href="https://github.com/iamAmiK" target="_blank">GitHub</a> ·
-      <a href="https://www.youtube.com/@amitabhkumar4528/videos" target="_blank">YouTube</a>
-    </p>
-  </header>
-
-  <!-- Education -->
-  <section>
-    <h2>Education</h2>
-    <div class="card">
-      <h3>University of New South Wales (UNSW)</h3>
-      <p>Bachelor of Software Engineering (Honours), Expected Dec 2026</p>
-      <p><strong>Relevant coursework:</strong> Data Structures & Algorithms, OOP, Networks, HCI, Cloud Security</p>
-      <p><strong>Skills:</strong> Python, JavaScript, Java, SQL, C, AWS, Azure, CI/CD</p>
+    <div class="social-links">
+      <a href="https://github.com/iamAmiK" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.youtube.com/@amitabhkumar4528/videos" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="mailto:amit.kres1@gmail.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="tel:0450049140" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-telephone"></i>
+      </a>
     </div>
-  </section>
-
-  <!-- Experience -->
-  <section>
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Software Engineering Intern — FAIC (UNSW)</h3>
-      <p><em>Apr 2025 – Present</em></p>
-      <ul>
-        <li>Database refactoring, AI/NLP/agentic research, full-stack automation.</li>
-        <li>Built a PEPPOL-compliant API for e-invoicing with schema validation.</li>
-        <li>Enhanced Flask app for BPMN → AWS Step Functions translation.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Research Analyst — FAIC</h3>
-      <p><em>Mar 2025 – Present</em></p>
-      <ul>
-        <li>APAC market research in digital trade & fintech, informing product strategy.</li>
-        <li>Engaged with AWS, Westpac, gov & startups to validate adoption goals.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Platform Operations Engineer — InspireEd</h3>
-      <p><em>May 2024 – Feb 2025</em></p>
-      <ul>
-        <li>REST API integration with Azure Communication Services.</li>
-        <li>Managed LMS, CMS & SMTP with strong security practices.</li>
-        <li>Deployed open-source SMTP gateway, saving costs & improving reliability.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>UBL Invoice Automation Platform</h3>
-      <p><em>Feb 2025</em></p>
-      <ul>
-        <li>REST API & full-stack web app for UBL invoice generation/validation.</li>
-        <li>Schema validation, CI/CD with GitHub Actions, AWS deployment.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Learning Management System (SaaS)</h3>
-      <p><em>Jun 2024 – Present</em></p>
-      <ul>
-        <li>Serverless LMS platform with AWS Amplify & Azure Entra ID auth.</li>
-        <li>Modular backend services with secure token access control.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Open Source NPM Package</h3>
-      <p><em>Mar 2024</em></p>
-      <p><a href="https://www.npmjs.com/package/any-call-system-web" target="_blank">any-call-system-web</a> — flexible call routing library, 100+ downloads.</p>
-    </div>
-  </section>
-
-  <!-- Awards -->
-  <section>
-    <h2>Awards & Extracurriculars</h2>
-    <div class="card">
-      <ul>
-        <li>Letter of recommendation from Prof. Fethi Rabhi (UNSW).</li>
-        <li>Top 1% in COMP1531 & SENG2021 at UNSW.</li>
-        <li>Certificate of Achievement in Financial Literacy with Models.</li>
-        <li>1st place — Hackathon (Mars Rover design & engineering).</li>
-        <li>Volunteer tutor at Code Club Australia.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Amitabh Kumar · Built with ❤ in Sydney</p>
-  </footer>
-
+    <footer class="footer">
+      <p>&copy; 2025 Amitabh Kumar. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
