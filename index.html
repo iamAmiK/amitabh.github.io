@@ -1,69 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amitabh Kumar - Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9fafc;
-      color: #333;
+    /* --- Base Styles --- */
+    :root {
+      --bg: #f9fbfd;
+      --card-bg: #ffffff;
+      --primary: #1e40af; /* coastal deep blue */
+      --accent: #3b82f6; /* lighter ocean blue */
+      --text: #1e293b;
+      --muted: #64748b;
     }
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* --- Header --- */
     header {
-      background: #1e293b;
-      color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      color: white;
     }
     header h1 {
-      margin: 0.2em 0;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
     }
-    header p {
-      margin: 0.3em 0;
+    header p, header a {
+      color: rgba(255,255,255,0.9);
+      font-size: 1rem;
     }
-    a {
-      color: #2563eb;
-      text-decoration: none;
+    header a {
+      margin: 0 .4rem;
+      transition: color .3s;
     }
-    a:hover {
-      text-decoration: underline;
+    header a:hover {
+      color: white;
     }
+
+    /* --- Sections --- */
     section {
       max-width: 900px;
       margin: auto;
-      padding: 2rem 1.5rem;
+      padding: 3rem 1.5rem;
     }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3em;
-      margin-bottom: 1em;
-      color: #1e293b;
+    section h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      border-left: 4px solid var(--accent);
+      padding-left: .5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* --- Cards --- */
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-bottom: .5rem;
+      color: var(--primary);
+    }
+    .card p {
+      margin-bottom: .5rem;
+      color: var(--muted);
     }
     ul {
-      list-style: disc;
-      padding-left: 1.5em;
+      padding-left: 1.2rem;
+      margin-top: .5rem;
     }
-    .card {
-      background: white;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    li {
+      margin: .3rem 0;
     }
+
+    /* --- Links --- */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 100%; height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform .3s ease;
+      transform-origin: right;
+    }
+    a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    /* --- Footer --- */
     footer {
       text-align: center;
-      padding: 1.5rem;
-      background: #1e293b;
+      padding: 2rem 1rem;
+      background: var(--primary);
       color: white;
-      margin-top: 2rem;
+      font-size: .9rem;
+      margin-top: 3rem;
     }
+    footer p { opacity: .9; }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <h1>Amitabh Kumar</h1>
     <p>
@@ -76,86 +140,92 @@
     </p>
   </header>
 
+  <!-- Education -->
   <section>
     <h2>Education</h2>
     <div class="card">
-      <p><strong>University of New South Wales (UNSW)</strong><br>
-      Bachelor of Software Engineering (Honours), Expected Dec 2026</p>
-      <p><em>Relevant coursework:</em> Data Structures & Algorithms, OOP, Computer Networks, HCI, Cloud & Application Security</p>
-      <p><em>Skills:</em> Python, JavaScript, Java, SQL, C, AWS, Azure, CI/CD, Postman, Swagger</p>
+      <h3>University of New South Wales (UNSW)</h3>
+      <p>Bachelor of Software Engineering (Honours), Expected Dec 2026</p>
+      <p><strong>Relevant coursework:</strong> Data Structures & Algorithms, OOP, Networks, HCI, Cloud Security</p>
+      <p><strong>Skills:</strong> Python, JavaScript, Java, SQL, C, AWS, Azure, CI/CD</p>
     </div>
   </section>
 
+  <!-- Experience -->
   <section>
     <h2>Experience</h2>
     <div class="card">
       <h3>Software Engineering Intern — FAIC (UNSW)</h3>
       <p><em>Apr 2025 – Present</em></p>
       <ul>
-        <li>Led database refactoring, AI/NLP/agentic research, and full-stack automation.</li>
-        <li>Built a secure, scalable, PEPPOL-compliant API for e-invoicing with schema validation.</li>
-        <li>Enhanced Flask app for BPMN → AWS Step Functions translation and improved AWS SQS communication.</li>
+        <li>Database refactoring, AI/NLP/agentic research, full-stack automation.</li>
+        <li>Built a PEPPOL-compliant API for e-invoicing with schema validation.</li>
+        <li>Enhanced Flask app for BPMN → AWS Step Functions translation.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Research Analyst — FAIC</h3>
       <p><em>Mar 2025 – Present</em></p>
       <ul>
-        <li>Led APAC market research on digital trade & fintech to support product strategy and commercialisation.</li>
-        <li>Engaged with AWS, Westpac, startups & government to validate solution fit and adoption goals.</li>
+        <li>APAC market research in digital trade & fintech, informing product strategy.</li>
+        <li>Engaged with AWS, Westpac, gov & startups to validate adoption goals.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Platform Operations Engineer — InspireEd</h3>
       <p><em>May 2024 – Feb 2025</em></p>
       <ul>
-        <li>Developed REST API integrating aXcelerate CMS with Azure Communication Services.</li>
-        <li>Managed LMS, CMS & SMTP infrastructure with security best practices.</li>
-        <li>Deployed a secure open-source SMTP gateway, improving reliability & reducing cost.</li>
+        <li>REST API integration with Azure Communication Services.</li>
+        <li>Managed LMS, CMS & SMTP with strong security practices.</li>
+        <li>Deployed open-source SMTP gateway, saving costs & improving reliability.</li>
       </ul>
     </div>
   </section>
 
+  <!-- Projects -->
   <section>
     <h2>Projects</h2>
     <div class="card">
-      <h3>Full-stack UBL Invoice Automation Platform</h3>
+      <h3>UBL Invoice Automation Platform</h3>
       <p><em>Feb 2025</em></p>
       <ul>
-        <li>Developed REST API & web app for UBL invoice generation/validation & AI-driven workflows.</li>
-        <li>Implemented schema validation, CI/CD with GitHub Actions, AWS RDS & Elastic Beanstalk deployment.</li>
+        <li>REST API & full-stack web app for UBL invoice generation/validation.</li>
+        <li>Schema validation, CI/CD with GitHub Actions, AWS deployment.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Learning Management System (SaaS)</h3>
       <p><em>Jun 2024 – Present</em></p>
       <ul>
-        <li>Scalable LMS platform using AWS Amplify & Azure Entra ID.</li>
-        <li>Designed modular backend services with secure token-based access control.</li>
+        <li>Serverless LMS platform with AWS Amplify & Azure Entra ID auth.</li>
+        <li>Modular backend services with secure token access control.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Open Source NPM Package</h3>
       <p><em>Mar 2024</em></p>
-      <p><a href="https://www.npmjs.com/package/any-call-system-web" target="_blank">any-call-system-web</a> — flexible call routing & trigger library, 100+ downloads.</p>
+      <p><a href="https://www.npmjs.com/package/any-call-system-web" target="_blank">any-call-system-web</a> — flexible call routing library, 100+ downloads.</p>
     </div>
   </section>
 
+  <!-- Awards -->
   <section>
     <h2>Awards & Extracurriculars</h2>
     <div class="card">
       <ul>
-        <li>Letter of recommendation from Prof. Fethi Rabhi (UNSW, 25+ years experience).</li>
+        <li>Letter of recommendation from Prof. Fethi Rabhi (UNSW).</li>
         <li>Top 1% in COMP1531 & SENG2021 at UNSW.</li>
         <li>Certificate of Achievement in Financial Literacy with Models.</li>
-        <li>1st place — Hackathon (Most Aesthetic Design) for Mars Rover project.</li>
-        <li>Volunteer lead tutor at Code Club Australia.</li>
+        <li>1st place — Hackathon (Mars Rover design & engineering).</li>
+        <li>Volunteer tutor at Code Club Australia.</li>
       </ul>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Amitabh Kumar · Built with ❤</p>
+    <p>© 2025 Amitabh Kumar · Built with ❤ in Sydney</p>
   </footer>
+
 </body>
 </html>
