@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { siteMetadata } from "@/app/data/siteMetadata";
-import { siteMetadata } from "@/app/data/siteMetadata";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
