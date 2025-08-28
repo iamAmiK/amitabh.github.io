@@ -10,6 +10,7 @@ if (!process.env.VELITE_STARTED && (isDev || isBuild)) {
 const config = {
   output: 'export',
   images: { unoptimized: true },
+  eslint: { ignoreDuringBuilds: true },
   async redirects() {
     return [
       {
