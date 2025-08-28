@@ -50,7 +50,7 @@ export function Footer() {
                     <video
                       className="h-24 w-24"
                       src="/ak_logo.mp4"
-                      alt="Amitabh's Logo"
+                      aria-label="Amitabh's logo animation"
                       autoPlay
                       loop
                       muted
