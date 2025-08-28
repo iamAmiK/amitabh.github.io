@@ -146,7 +146,7 @@ const NavLogo: React.FC<NavLogoProps> = ({ onClickCallback }) => {
       <video
         className="h-12 w-12"
         src="/ak_logo.mp4"
-        alt="Amitabh's Logo"
+        aria-label="Amitabh's logo animation"
         autoPlay
         loop
         muted
