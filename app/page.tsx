@@ -1,7 +1,3 @@
- 
- 
- 
- 
 import { ScrapbookBento } from "./components/ScrapbookBento";
 import { ToolboxBento } from "./components/ToolboxBento";
 import { ConnectionsBento } from "./components/ConnectionsBento";
@@ -137,7 +133,7 @@ export default function Home() {
                   While business gave me exposure to markets, customers and growth strategies, technology was always at the core of everything we did. From building and implementing SaaS solutions to making sure systems ran reliably, I became interested in how software enables business outcomes.
                   <br />
                   <br />
-                  At the <WavyHighlight delay={400}>UNSW as a Software Engineering (Honours) student</WavyHighlight>, I’ve been fortunate to <WavyHighlight delay={600}>achieve strong results</WavyHighlight>, including <WavyHighlight delay={400}>scoring in the top 1% of my cohort in Software Engineering Fundamentals and Requirements and Design</WavyHighlight> and <WavyHighlight delay={800}>receiving a Letter of Recommendation from the Director of Software Engineering, Prof. Fethi Rabhi.</WavyHighlight> These experiences confirmed that my place lies at the intersection of technology, product and innovation.
+                  At the <WavyHighlight delay={400}>UNSW as a Software Engineering (Honours) student</WavyHighlight>, I’ve been fortunate to <WavyHighlight delay={600}>achieve strong results</WavyHighlight>, including <WavyHighlight delay={400}>scoring in the top 1% of my cohort in Software Engineering Fundamentals and Requirements and Design</WavyHighlight> and <WavyHighlight delay={800}>receiving a Letter of Recommendation from the Director of Software Engineering at UNSW, Prof. Fethi Rabhi.</WavyHighlight> These experiences confirmed that my place lies at the intersection of technology, product and innovation.
                   </p>
                 </div>
                 <div className="hidden lg:block">
