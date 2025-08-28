@@ -45,7 +45,7 @@ function DesktopNav() {
           <video
             className="h-20 w-20"
             src="/ak_logo.mp4"
-            alt="Amitabh's Logo"
+            aria-label="Amitabh's logo animation"
             autoPlay
             loop
             muted
