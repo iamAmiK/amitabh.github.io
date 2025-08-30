@@ -17,11 +17,11 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Full-stack UBL Invoice Automation Platform and API",
-    description: "A comprehensive REST API and full-stack web application for UBL invoice generation, validation, translation, and automated dispatch.",
-    techStack: ["TypeScript", "Node.js", "Express", "AWS (RDS, S3, Elastic Beanstalk)", "Gemini AI", "Vercel", "Gmail SMTP"],
+    title: "Full-stack Natural Language Processing Invoice Automation Platform and API",
+    description: "A comprehensive REST API and full-stack web application for UBL invoice generation, validation, translation and automated dispatch with agentic capabilities through natural language processing..",
+    techStack: ["TypeScript", "Node.js", "Express", "AWS (RDS, S3, Elastic Beanstalk)", "Gemini AI", "Vercel", "Gmail SMTP", "Retrieval Augmented Generation (RAG)"],
     bullets: [
-      "Developed a REST API and full-stack web application for UBL invoice generation/validation, translation (via Gemini AI), PDF export and SMTP dispatch, deployed on Elastic Beanstalk and Vercel.",
+      "Developed a REST API with 17 features with thorough public documentation (https://github.com/iamAmiK/UBL-API-documentation) and a full-stack web application for UBL invoice generation/validation, translation (via Gemini AI), PDF export and SMTP dispatch deployed on Elastic Beanstalk and Vercel.",
       "Designed schema validation and compliance mechanisms with PostgreSQL on AWS RDS, implemented CI/CD pipelines via GitHub Actions and deployed backend services on AWS EC2 to manage AI agentic workflows and allowing user driven natural language commands."
     ],
     videoUrl: "https://www.youtube.com/watch?v=HQjNpQa1V7Q"
@@ -122,7 +122,7 @@ export default function ProjectPage() {
   };
 
   const projectNames = [
-    "UBL Invoice Platform",
+    "NLP Invoice Platform",
     "LMS SaaS",
     "NPM Package", 
     "Mars Rover",
