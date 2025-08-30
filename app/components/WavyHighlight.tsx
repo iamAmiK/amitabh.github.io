@@ -105,7 +105,7 @@ export function WavyHighlight({ children, delay = 0, className = "" }: WavyHighl
     };
 
     // Create highlights after a short delay to ensure text is rendered
-    setTimeout(createHighlights, 100);
+    setTimeout(createHighlights, 300);
     
     // Only update positions on resize/scroll, don't recreate
     window.addEventListener('resize', updateHighlightPositions);
