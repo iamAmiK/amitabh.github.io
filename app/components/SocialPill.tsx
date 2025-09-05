@@ -3,7 +3,7 @@ import { siteMetadata } from "app/data/siteMetadata";
 export function SocialPill() {
   return (
     <div 
-      className="z-30 flex place-items-center space-x-2 sm:space-x-1 rounded-full px-4 sm:px-3 py-2 sm:py-1.5"
+      className="z-30 flex place-items-center space-x-1 rounded-full px-3 py-1.5"
       style={{ backgroundColor: "rgba(167, 139, 250, 0.18)" }}
     >
       <a href={siteMetadata.email}>
