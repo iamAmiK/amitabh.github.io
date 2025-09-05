@@ -51,7 +51,7 @@ function DesktopNav() {
           />
         </Link>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 flex justify-center ml-9">
         <ul className="flex place-items-center space-x-4 rounded-full border border-border-primary px-5 py-2 text-sm text-gray-500">
           {navigationLinks.map((link) => (
             <li key={link.name}>
