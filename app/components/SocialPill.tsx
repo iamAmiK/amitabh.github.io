@@ -30,6 +30,18 @@ export function SocialPill() {
         />
         <span className="sr-only">YouTube</span>
       </a>
+      <a 
+        href="https://www.linkedin.com/in/amitabh-kumar-/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/blog/linkedin.svg"
+          alt="LinkedIn"
+          className="h-6 w-6 text-gray-400 hover:text-gray-300 transition-colors"
+        />
+        <span className="sr-only">LinkedIn</span>
+      </a>
     </div>
   );
 }
