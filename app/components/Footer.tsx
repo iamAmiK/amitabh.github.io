@@ -65,9 +65,11 @@ export function Footer() {
                   © {new Date().getFullYear()} Amitabh Kumar
                 </p>
               </div>
-              <div className="flex w-full items-end justify-end pr-16">
-                <SocialPill />
-              </div>
+              <div className="flex w-full items-end justify-end pr-4 sm:pr-16">
+               <div className="flex-shrink-0">
+                 <SocialPill />
+               </div>
+             </div>
             </div>
             <div className="flex w-full flex-col items-end py-6 text-xs lg:pl-16">
               <div className="ld:space-x-0 flex w-full justify-between md:justify-start md:space-x-36 lg:justify-between">
