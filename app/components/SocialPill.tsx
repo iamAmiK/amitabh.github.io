@@ -10,7 +10,7 @@ export function SocialPill() {
         <img
           src="/blog/email.svg"
           alt="Email"
-          className="h-6 w-6 text-gray-400 hover:text-gray-300 transition-colors"
+          className="h-8 w-8 sm:h-6 sm:w-6 text-gray-400 hover:text-gray-300 transition-colors"
         />
         <span className="sr-only">Email</span>
       </a>
@@ -18,7 +18,7 @@ export function SocialPill() {
         <img
           src="/blog/github.svg"
           alt="GitHub"
-          className="h-6 w-6 text-gray-400 hover:text-gray-300 transition-colors"
+          className="h-8 w-8 sm:h-6 sm:w-6 text-gray-400 hover:text-gray-300 transition-colors"
         />
         <span className="sr-only">GitHub</span>
       </a>
@@ -26,7 +26,7 @@ export function SocialPill() {
         <img
           src="/blog/youtube.svg"
           alt="YouTube"
-          className="h-6 w-6 text-gray-400 hover:text-gray-300 transition-colors"
+          className="h-8 w-8 sm:h-6 sm:w-6 text-gray-400 hover:text-gray-300 transition-colors"
         />
         <span className="sr-only">YouTube</span>
       </a>
@@ -38,7 +38,7 @@ export function SocialPill() {
         <img
           src="/blog/linkedin.svg"
           alt="LinkedIn"
-          className="h-6 w-6 text-gray-400 hover:text-gray-300 transition-colors"
+          className="h-8 w-8 sm:h-6 sm:w-6 text-gray-400 hover:text-gray-300 transition-colors"
         />
         <span className="sr-only">LinkedIn</span>
       </a>
