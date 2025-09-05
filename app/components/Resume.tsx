@@ -27,30 +27,19 @@ const resumeData: ResumeData = {
       ],
     },
     {
-      company: "Training & Consulting Firm — Acquired",
-      period: "2023 - 2025",
+      company: "InspireEd - Training and Consulting Firm (Acquired)",
+      period: "2023 - July 2025",
       positions: [
         {
-          title: "Co‑founder",
+          title: "Product / Operations Lead",
           description: [
-            "As our second family business and having reached adulthood, I had the responsiblity as co-founder to grow our training and consulting firm; we achieved rapid product‑market fit in 2024 through a series of successful B2B partnerships.",
-            "I led go to market and delivery operations across for B2C acquisition and B2B partnerships, we scaled offerings through 2024 and grew to a team of 15 people.",
-            "In July of 2025, we had been begun conversations for an acquisition and successfully exited for a low six figure sum in the same month.",
-          ],
-        },
-      ],
-    },
-    {
-      company:
-        "InspireEd — Education, Government, SaaS",
-      period: "May 2024 - Feb 2025",
-      positions: [
-        {
-          title: "Platform Operations Engineer",
-          description: [
-            "Developed and deployed a REST API on AWS Lamdba with API Gateway to integrate the aXcelerate CMS with Azure Communication Services and the Wordpress site, enabling secure and automated email enrolment workflows.",
+            "As co-founder of our second family business, I took responsibility for growing our training and consulting firm's product and operations capabilities. We achieved rapid product-market fit in 2024 through strategic B2B partnerships and scaled our team to 15 people while expanding our service offerings.",
+            "Led go-to-market strategy and delivery operations for both B2C acquisition and B2B partnerships. Managed a multidisciplinary team of 7 (onshore and overseas) across operations and product development.",
+            "Scaled service offerings and business operations throughout 2024, growing from startup to 15-person team. Successfully negotiated and completed an acquisition exit for a low six-figure sum in July 2025.",
+            "Developed and deployed a REST API on AWS Lambda with API Gateway to integrate the aXcelerate CMS with Azure Communication Services and the main site, enabling secure and automated email enrollment workflows.",
             "Managed Learning Management System, CMS and SMTP network infrastructure, applying security best practices to ensure data integrity, availability and compliance with RTO standards.",
-            "Enhanced email reliability by deploying and configuring a secure, open source SMTP gateway, saving cost and improving uptime.",
+            "Enhanced email reliability by deploying and configuring a secure, open-source SMTP gateway, saving costs and improving uptime.",
+            "Built automated reporting & analytics pipelines to track student progress, completion rates and business KPIs to enable data-driven decision making."
           ],
         },
       ],
@@ -62,9 +51,9 @@ const resumeData: ResumeData = {
         {
           title: "Product, Engineer, Marketing, Growth and everything in between",
           description: [
-            "Our first family venture, starting at the age of 12, I was first involved in marketing making graphic designs and emailing before moving into product development and market fit testing as I grew.",
-            "As the company scaled, I took on broader responsibilities across product, operations and customer success.",
-            "This was a a vital experience where I learned first hand how innovation, execution and customer centric design drive business success as well as managing the ups and downs that may happen.",
+            "Our first family venture, starting at the age of 12, I was first involved in marketing making graphic designs, giving flyers and emailing before moving into product development and market fit testing as I  and the company grew.",
+            "I took on broader responsibilities across product, operations and customer success. This was a a vital experience where I learned first hand how innovation, execution and customer centric design drive business success.",
+            "Through all the ups and downs that happened, we are still running strong til date and have impacted over 5000 customers."
           ],
         },
       ],
