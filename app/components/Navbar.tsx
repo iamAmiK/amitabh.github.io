@@ -29,12 +29,10 @@ const Navbar: React.FC = () => {
 
 function DesktopNav() {
   const path = usePathname();
-
   const determineActiveClass = (link: string): string => {
     const baseLink = link.split("#")[0];
     return path === baseLink ? "text-text-primary" : "text-gray-500";
   };
-
   return (
     <nav
       aria-label="Desktop navigation"
@@ -53,22 +51,26 @@ function DesktopNav() {
           />
         </Link>
       </div>
-      <ul className="flex place-items-center space-x-4 rounded-full border border-border-primary px-5 py-2 text-sm text-gray-500">
-        {navigationLinks.map((link) => (
-          <li key={link.name}>
-            <Link
-              href={link.link}
-              prefetch={true}
-              className={`${determineActiveClass(
-                link.link,
-              )} font-medium hover:text-text-primary`}
-            >
-              {link.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <SocialPill />
+      <div className="flex-1 flex justify-center">
+        <ul className="flex place-items-center space-x-4 rounded-full border border-border-primary px-5 py-2 text-sm text-gray-500">
+          {navigationLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                href={link.link}
+                prefetch={true}
+                className={`${determineActiveClass(
+                  link.link,
+                )} font-medium hover:text-text-primary`}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="w-[132px] flex justify-end">
+        <SocialPill />
+      </div>
     </nav>
   );
 }
