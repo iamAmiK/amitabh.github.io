@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const messages = [
   "Yes, I most definitely over engineered this website...",
+  "Check this out on desktop for a more interactive experience!",
   "I hope you're having a wonderful day :)",
   "Yes, my favourite colour is purple, how could you tell!",
   "Refresh to see new branches in the background.",
