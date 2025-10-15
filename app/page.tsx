@@ -165,7 +165,7 @@ export default function Home() {
                     Life Beyond Code
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                  Outside of business and engineering, I find inspiration in nature, startups, historical architecture, cars and paleontology (an unusual collection, I know...). I love hiking and seeing genuinely breathtaking views, helps keep me grounded. Startups, deep tech and global trends across industries help my think tank create new ideas. Historical architecture and paleontology go hand in hand for my childhood fascination of the past (you should see my stone and shark tooth collection). And cars, well they just look and sound nice (dream car is Novitec 812 Ferrari).
+                  Outside of business and engineering, I find inspiration in nature, startups, historical architecture, cars and paleontology (an unusual collection, I know...). I love hiking and seeing genuinely breathtaking views, helps keep me grounded. Startups, deep tech and global trends across industries help my think tank create new ideas. Historical architecture and paleontology go hand in hand for my childhood fascination of the past (you should see my stone and shark tooth collection). And cars, well they just look and sound nice (dream car is Novitec 812).
 
                   </p>
                 </div>
@@ -198,7 +198,7 @@ export default function Home() {
                     These Days
                   </h2>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
-                  <WavyHighlight delay={400}>On top of my business experience</WavyHighlight>, I’ve had the chance to build my career across multiple roles. As a <WavyHighlight delay={600}>Platform Operations Engineer</WavyHighlight> at InspireEd, I managed infrastructure, DevOps and SRE. Later as a <WavyHighlight delay={800}>Product Research Analyst</WavyHighlight>, I focused on fintech and digital trade, combining technical insights with market strategy. Today, I’m a <WavyHighlight delay={1000}>Software Engineering Intern</WavyHighlight> at the Fintech AI Innovation Consortium (FAIC) where I've led and helped build products for industry partners like Macquarie, Westpac and CSIRO's Data61.
+                  <WavyHighlight delay={400}>On top of my business experience</WavyHighlight>, I’ve had the chance to build my career across multiple roles. As <WavyHighlight delay={600}>Product / Operations Lead</WavyHighlight> at InspireEd, I managed GTM strategy, DevOps and development. Later as a <WavyHighlight delay={800}>Product Research Analyst</WavyHighlight>, I focused on fintech and digital trade, combining technical insights with market strategy. Today, I’m a <WavyHighlight delay={1000}>Software Engineering Intern</WavyHighlight> at the Fintech AI Innovation Consortium (FAIC) where I've led and helped build products for industry partners like Macquarie, Westpac and CSIRO's Data61.
                   </p>
                   <p className="mb-6 text-base leading-8 text-text-secondary">
                   <WavyHighlight delay={1200}>Looking forward, I aim to expand into roles that involve the full product lifecycle, where I can bring together my experience in business, engineering and product innovation.</WavyHighlight>
